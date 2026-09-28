@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Metadata -->
+  <title>Games &amp; Schedule — HoopCraft Basketball</title>
+  <meta name="description" content="Explore the full basketball schedule: live and upcoming games, championship tournament brackets, all-star showcases, player stats, and training clinics.">
+  
+  <!-- Open Graph Metadata -->
+  <meta property="og:title" content="Games &amp; Schedule — HoopCraft Basketball">
+  <meta property="og:description" content="Explore the full basketball schedule: live and upcoming games, championship tournament brackets, all-star showcases, player stats, and training clinics.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1504450758481-7338eba7524a">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
+  
+  <!-- Local Styles -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Header Navigation -->
+  <header>
+    <nav class="header-nav">
+      <div class="container d-flex align-items-center justify-content-between">
+        <!-- Desktop Navigation: Left -->
+        <ul class="nav-desktop-links d-flex list-unstyled m-0 p-0">
+          <li><a href="index.html" class="nav-link-custom">Home</a></li>
+          <li><a href="menu.html" class="nav-link-custom active">Games</a></li>
+          <li><a href="about.html" class="nav-link-custom">About</a></li>
+          <li><a href="contact.html" class="nav-link-custom">Contact</a></li>
+        </ul>
+        
+        <!-- Logo: Center -->
+        <div class="brand-logo-container">
+          <a href="index.html" class="brand-logo">
+            HOOPCRAFT
+            <span>BASKETBALL</span>
+          </a>
+        </div>
+
+        <!-- Desktop Navigation: Right -->
+        <div class="d-flex align-items-center">
+          <button class="theme-toggle-btn me-3" aria-label="Toggle Light and Dark Mode">
+            <i class="bi bi-moon-stars"></i>
+          </button>
+          <div class="nav-desktop-reserve">
+            <a href="reservation.html" class="btn-premium btn-premium-solid py-2 px-4" style="font-size: 0.8rem;">COURT PASS</a>
+          </div>
+          <!-- Mobile Hamburger Toggle -->
+          <button class="hamburger-menu ms-2" aria-label="Open Navigation Overlay">
+            <i class="bi bi-list"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile Navigation Overlay Drawer -->
+    <div class="mobile-nav-overlay">
+      <button class="mobile-nav-close" aria-label="Close Navigation Overlay">
+        <i class="bi bi-x-lg"></i>
+      </button>
+      <ul class="mobile-nav-links">
+        <li class="mobile-nav-item"><a href="index.html" class="mobile-nav-link">Home</a></li>
+        <li class="mobile-nav-item"><a href="menu.html" class="mobile-nav-link active">Games</a></li>
+        <li class="mobile-nav-item"><a href="about.html" class="mobile-nav-link">About</a></li>
+        <li class="mobile-nav-item"><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+        <li class="mobile-nav-item mt-3"><a href="reservation.html" class="mobile-nav-btn-tab">COURT PASS</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <!-- Menu / Games Hero Section -->
+    <section class="page-hero">
+      <div class="page-hero-bg" style="background-image: url('https://images.unsplash.com/photo-1504450758481-7338eba7524a');"></div>
+      <div class="page-hero-overlay" style="background: rgba(11,15,25,0.78);"></div>
+      <div class="page-hero-content">
+        <span class="badge-fast-food mb-2">2026 BASKETBALL SEASON</span>
+        <h1 class="display-3 font-heading text-white">GAMES &amp; SCHEDULE</h1>
+        <p class="font-body text-warning fs-4 mt-2">The Game. The Energy. The Passion.</p>
+      </div>
+    </section>
+
+    <!-- Menu / Games Filtering Section -->
+    <section class="section-padding container">
+      <!-- Interactive Category Filter Bar -->
+      <div class="menu-filter-container">
+        <button class="menu-filter-btn active" data-filter="all">ALL GAMES</button>
+        <button class="menu-filter-btn" data-filter="championship">CHAMPIONSHIP</button>
+        <button class="menu-filter-btn" data-filter="eastern">EASTERN LEAGUE</button>
+        <button class="menu-filter-btn" data-filter="western">WESTERN LEAGUE</button>
+        <button class="menu-filter-btn" data-filter="tournaments">TOURNAMENTS</button>
+        <button class="menu-filter-btn" data-filter="allstar">ALL-STAR</button>
+        <button class="menu-filter-btn" data-filter="camps">TRAINING CAMPS</button>
+        <button class="menu-filter-btn" data-filter="playoffs">PLAYOFFS</button>
+      </div>
+
+      <!-- Menu Items / Match List Grid -->
+      <div class="menu-rows-wrapper" id="menu-items-grid">
+
+        <!-- CHAMPIONSHIP -->
+        <div class="menu-row menu-item-card" data-category="championship">
+          <div class="menu-row-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1546519638-68e109498ffc" alt="Phoenix Titans vs LA Vipers">
+          </div>
+          <div class="menu-row-content">
+            <div class="menu-row-title-bar">
+              <h3 class="menu-row-title">PHOENIX TITANS VS LA VIPERS</h3>
+              <div class="menu-row-leader"></div>
+              <span class="menu-row-price text-danger">OCT 15 • 7:30 PM</span>
+            </div>
+            <p class="menu-row-desc">Western conference championship finals rematch featuring top MVP scorers and high-tempo offense.</p>
+          </div>
+        </div>
+
+        <div class="menu-row menu-item-card" data-category="championship">
+          <div class="menu-row-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1504450758481-7338eba7524a" alt="Brooklyn Knights vs Boston Iron">
+          </div>
+          <div class="menu-row-content">
+            <div class="menu-row-title-bar">
+              <h3 class="menu-row-title">BROOKLYN KNIGHTS VS BOSTON IRON</h3>
+              <div class="menu-row-leader"></div>
+              <span class="menu-row-price text-danger">OCT 19 • 8:00 PM</span>
+            </div>
+            <p class="menu-row-desc">Eastern conference title showdown with high stakes rim defense and elite perimeter shooting.</p>
+          </div>
+        </div>
+
+        <div class="menu-row menu-item-card" data-category="championship">
+          <div class="menu-row-img-wrapper">
+            <img src="https://media.istockphoto.com/id/1480105322/photo/junior-basketball-team-during-training-class-standing-together-and-huddling-in-circle-players.jpg?s=612x612&w=0&k=20&c=AI75hyo6RkUOX9DdomXeQFCdUNEn1o2yjQ2T1Bb-pag=" alt="National Cup Grand Final">
+          </div>
+          <div class="menu-row-content">
+            <div class="menu-row-title-bar">
+              <h3 class="menu-row-title">NATIONAL CUP GRAND FINAL</h3>
+              <div class="menu-row-leader"></div>
+              <span class="menu-row-price text-danger">NOV 02 • 6:00 PM</span>
+            </div>
+            <p class="menu-row-desc">Annual trophy match between top conference champions at Madison Center Arena before 20,000 fans.</p>
+          </div>
+        </div>
+
+        <div class="menu-row menu-item-card" data-category="championship">
+          <div class="menu-row-img-wrapper">
+            <img src="https://images.stockcake.com/public/9/a/3/9a33bef5-3948-4716-8099-cdd9bf57a8fb_medium/team-huddle-strategy-stockcake.jpg" alt="Chicago Force vs Golden Coast">
+          </div>
+          <div class="menu-row-content">
+            <div class="menu-row-title-bar">
+              <h3 class="menu-row-title">CHICAGO FORCE VS GOLDEN COAST <span class="badge-spicy">HOT RIVALRY 🔥</span></h3>
+              <div class="menu-row-leader"></div>
+              <span class="menu-row-price text-danger">NOV 08 • 8:30 PM</span>
+            </div>
+            <p class="menu-row-desc">Cross-conference battle featuring two top-ranked defensive squads fighting for championship positioning.</p>
+          </div>
+        </div>
+
+        <!-- EASTERN LEAGUE -->
+        <div class="menu-row menu-item-card" data-category="eastern">
+          <div class="menu-row-img-wrapper">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwU3_myd3LstDzjTkRjUlqILUewMb3suAF_0ABeMGQ1Q&s=10" alt="Chicago Force vs Miami Surge">
+          </div>
+          <div class="menu-row-content">
+            <div class="menu-row-title-bar">
+              <h3 class="menu-row-title">CHICAGO FORCE VS MIAMI SURGE</h3>
+              <div class="menu-row-leader"></div>
+              <span class="menu-row-price text-danger">OCT 22 • 7:00 PM</span>
+            </div>
+            <p class="menu-row-desc">Fast-break offensive battle featuring league leaders in 3-point conversion percentage and transition scoring.</p>
+          </div>
+        </div>
+
+        <div class="menu-row menu-item-card" data-category="eastern">
+          <div class="menu-row-img-wrapper">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHXC46NPGHWwbfaU8ziPGhCWUMq3kEZqxLncRSZR29Lw&s=10" alt="New York Empire vs Philadelphia Kings">
+          </div>
+          <div class="menu-row-content">
+            <div class="menu-row-title-bar">
+              <h3 class="menu-row-title">NEW YORK EMPIRE VS PHILADELPHIA KINGS</h3>
+              <div class="menu-row-leader"></div>
+              <span class="menu-row-price text-danger">OCT 25 • 7:30 PM</span>
+            </div>
+            <p class="menu-row-desc">Intense division derby with major playoff seed implications and a packed, roaring courtside crowd.</p>
+          </div>
+        </div>
+
+        <div class="menu-row menu-item-card" data-category="eastern">
+          <div class="menu-row-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1518063319789-7217e6706b04" alt="Atlanta Flock vs Toronto North">
+          </div>
+          <div class="menu-row-content">
+            <div class="menu-row-title-bar">
+              <h3 class="menu-row-title">ATLANTA FLOCK VS TORONTO NORTH</h3>
+              <div class="menu-row-leader"></div>
+              <span class="menu-row-price text-danger">OCT 28 • 8:00 PM</span>
+            </div>
+            <p class="menu-row-desc">Clash of dominant rebounding centers and elite floor generals in peak mid-season form.</p>
+          </div>
+        </div>
+
+        <!-- WESTERN LEAGUE -->
+        <div class="menu-row menu-item-card" data-category="western">
+          <div class="menu-row-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1519861531473-9200262188bf" alt="Dallas Outlaws vs Seattle Sonics">
+          </div>
+          <div class="menu-row-content">
+            <div class="menu-row-title-bar">
+              <h3 class="menu-row-title">DALLAS OUTLAWS VS SEATTLE SONICS</h3>
+              <div class="menu-row-leader"></div>
+              <span class="menu-row-price text-danger">OCT 23 • 8:30 PM</span>
+            </div>
+            <p class="menu-row-desc">Western shootout with highlight-reel alley-oops and clutch fourth-quarter rim protection.</p>
+          </div>
+        </div>
+
+        <div class="menu-row menu-item-card" data-category="western">
+          <div class="menu-row-img-wrapper">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwoprIeT97_FfTJOeS6K6BUx9NhJBRq5Vjdr_ra5K9u4qt_gdjZ7F3lJY&s=10" alt="Golden Coast vs Denver Peaks">
+          </div>
+          <div class="menu-row-content">
+            <div class="menu-row-title-bar">
+              <h3 class="menu-row-title">GOLDEN COAST VS DENVER PEAKS</h3>
+              <div class="menu-row-leader"></div>
+              <span class="menu-row-price text-danger">OCT 27 • 9:00 PM</span>
+            </div>
+            <p class="menu-row-desc">High-altitude clash between the reigning league assist leaders and dangerous perimeter sharpshooters.</p>
+          </div>
+        </div>
+
+        <!-- TOURNAMENTS -->
+        <div class="menu-row menu-item-card" data-category="tournaments">
+          <div class="menu-row-img-wrapper">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlxAgorOJbT14RQc42RVERwnmyQmddO76fiyfMsJ1Neg&s=10" alt="Summer Pro-Am Invitational">
+          </div>
+          <div class="menu-row-content">
+            <div class="menu-row-title-bar">
+              <h3 class="menu-row-title">SUMMER PRO-AM INVITATIONAL</h3>
+              <div class="menu-row-leader"></div>
+              <span class="menu-row-price text-danger">NOV 05 • 5:00 PM</span>
+            </div>
+            <p class="menu-row-desc">16-team single-elimination tournament featuring premier pro talents and rising college basketball stars.</p>
+          </div>
+        </div>
+
+        <div class="menu-row menu-item-card" data-category="tournaments">
+          <div class="menu-row-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1504450758481-7338eba7524a" alt="Intercontinental Hoop Cup">
+          </div>
+          <div class="menu-row-content">
+            <div class="menu-row-title-bar">
+              <h3 class="menu-row-title">INTERCONTINENTAL HOOP CUP</h3>
+              <div class="menu-row-leader"></div>
+              <span class="menu-row-price text-danger">NOV 12 • 4:30 PM</span>
+            </div>
+            <p class="menu-row-desc">International club championship tournament featuring champion rosters from 8 global basketball leagues.</p>
+          </div>
+        </div>
+
+        <!-- ALL-STAR -->
+        <div class="menu-row menu-item-card" data-category="allstar">
+          <div class="menu-row-img-wrapper">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwU3_myd3LstDzjTkRjUlqILUewMb3suAF_0ABeMGQ1Q&s=10" alt="All-Star East vs West Showcase">
+          </div>
+          <div class="menu-row-content">
+            <div class="menu-row-title-bar">
+              <h3 class="menu-row-title">ALL-STAR EAST VS WEST SHOWCASE</h3>
+              <div class="menu-row-leader"></div>
+              <span class="menu-row-price text-danger">DEC 01 • 8:00 PM</span>
+            </div>
+            <p class="menu-row-desc">The world's top 24 basketball superstars competing in the marquee primetime exhibition of the year.</p>
+          </div>
+        </div>
+
+        <div class="menu-row menu-item-card" data-category="allstar">
+          <div class="menu-row-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1519861531473-9200262188bf" alt="Slam Dunk & 3-Point Contest">
+          </div>
+          <div class="menu-row-content">
+            <div class="menu-row-title-bar">
+              <h3 class="menu-row-title">SLAM DUNK &amp; 3-POINT CONTEST <span class="badge-spicy">FAN FAVORITE 🔥</span></h3>
+              <div class="menu-row-leader"></div>
+              <span class="menu-row-price text-danger">DEC 02 • 7:00 PM</span>
+            </div>
+            <p class="menu-row-desc">High-flying acrobatic dunk contest and long-range shooting showdown under the arena spotlights.</p>
+          </div>
+        </div>
+
+        <!-- CAMPS & TRAINING -->
+        <div class="menu-row menu-item-card" data-category="camps">
+          <div class="menu-row-img-wrapper">
+            <img src="https://media.istockphoto.com/id/1480105322/photo/junior-basketball-team-during-training-class-standing-together-and-huddling-in-circle-players.jpg?s=612x612&w=0&k=20&c=AI75hyo6RkUOX9DdomXeQFCdUNEn1o2yjQ2T1Bb-pag=" alt="Elite Point Guard Clinic">
+          </div>
+          <div class="menu-row-content">
+            <div class="menu-row-title-bar">
+              <h3 class="menu-row-title">ELITE POINT GUARD CLINIC</h3>
+              <div class="menu-row-leader"></div>
+              <span class="menu-row-price text-danger">NOV 15 • 10:00 AM</span>
+            </div>
+            <p class="menu-row-desc">Intensive ball-handling, court vision, and decision-making development camp led by former pro guards.</p>
+          </div>
+        </div>
+
+        <div class="menu-row menu-item-card" data-category="camps">
+          <div class="menu-row-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1546519638-68e109498ffc" alt="Shooting & Footwork Masterclass">
+          </div>
+          <div class="menu-row-content">
+            <div class="menu-row-title-bar">
+              <h3 class="menu-row-title">SHOOTING &amp; FOOTWORK MASTERCLASS</h3>
+              <div class="menu-row-leader"></div>
+              <span class="menu-row-price text-danger">NOV 20 • 2:00 PM</span>
+            </div>
+            <p class="menu-row-desc">Comprehensive shooting biomechanics, catch-and-shoot repetition drills, and pick-and-roll mastery.</p>
+          </div>
+        </div>
+
+        <!-- PLAYOFFS -->
+        <div class="menu-row menu-item-card" data-category="playoffs">
+          <div class="menu-row-img-wrapper">
+            <img src="https://images.stockcake.com/public/9/a/3/9a33bef5-3948-4716-8099-cdd9bf57a8fb_medium/team-huddle-strategy-stockcake.jpg" alt="Conference Semifinal Game 7">
+          </div>
+          <div class="menu-row-content">
+            <div class="menu-row-title-bar">
+              <h3 class="menu-row-title">CONFERENCE SEMIFINAL — GAME 7</h3>
+              <div class="menu-row-leader"></div>
+              <span class="menu-row-price text-danger">MAY 18 • 8:30 PM</span>
+            </div>
+            <p class="menu-row-desc">Do-or-die elimination showdown to decide who punches their ticket to the championship series.</p>
+          </div>
+        </div>
+
+        <div class="menu-row menu-item-card" data-category="playoffs">
+          <div class="menu-row-img-wrapper">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3_By9ou61St3npqQ4GBb67KC8tn6w2lgUIsqZlxc38A&s=10" alt="Wildcard Play-In Elimination">
+          </div>
+          <div class="menu-row-content">
+            <div class="menu-row-title-bar">
+              <h3 class="menu-row-title">WILDCARD PLAY-IN ELIMINATION</h3>
+              <div class="menu-row-leader"></div>
+              <span class="menu-row-price text-danger">MAY 10 • 7:00 PM</span>
+            </div>
+            <p class="menu-row-desc">High-pressure winner-take-all matchup for the final playoff bracket spot in the tournament.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section-padding text-center bg-danger text-white">
+      <div class="container py-4">
+        <h2 class="section-title text-white animate-reveal" style="font-size: clamp(2.5rem, 6vw, 5.5rem);">FEEL THE ENERGY OF THE GAME</h2>
+        <p class="font-body mx-auto mb-4" style="max-width: 500px; opacity: 0.9;">
+          Follow every moment on the court. Reserve your match tickets or training registration today.
+        </p>
+        <a href="reservation.html" class="btn-premium btn-premium-solid bg-white text-danger border-white py-3 px-5 fw-bold">GET COURT PASS</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="footer-section">
+    <div class="container">
+      <div class="row gy-5">
+        <!-- Brand Info -->
+        <div class="col-lg-4 col-md-12">
+          <a href="index.html" class="footer-logo">
+            HOOPCRAFT
+            <span class="text-warning">BASKETBALL</span>
+          </a>
+          <p class="font-body mt-4" style="opacity: 0.7; max-width: 320px; font-size: 0.9rem;">
+            Stay connected with the latest basketball action, game schedules, player performances, team updates, and unforgettable moments from the court.
+          </p>
+        </div>
+        
+        <!-- Navigation Links -->
+        <div class="col-lg-2 col-md-4 col-6">
+          <h5 class="text-white mb-4 letter-spacing-lg" style="font-size: 1.1rem;">EXPLORE</h5>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link-item">Home</a></li>
+            <li><a href="menu.html" class="footer-link-item">Games</a></li>
+            <li><a href="about.html" class="footer-link-item">About Us</a></li>
+            <li><a href="contact.html" class="footer-link-item">Contact</a></li>
+            <li><a href="reservation.html" class="footer-link-item">Court Pass</a></li>
+          </ul>
+        </div>
+        
+        <!-- Categories -->
+        <div class="col-lg-3 col-md-4 col-6">
+          <h5 class="text-white mb-4 letter-spacing-lg" style="font-size: 1.1rem;">LEAGUES &amp; MORE</h5>
+          <ul class="footer-links">
+            <li><a href="menu.html" class="footer-link-item">Featured Games</a></li>
+            <li><a href="menu.html" class="footer-link-item">Top Teams</a></li>
+            <li><a href="menu.html" class="footer-link-item">Player Profiles</a></li>
+            <li><a href="menu.html" class="footer-link-item">Tournaments</a></li>
+            <li><a href="menu.html" class="footer-link-item">Training Camps</a></li>
+          </ul>
+        </div>
+        
+        <!-- Contact Details -->
+        <div class="col-lg-3 col-md-4 col-12">
+          <h5 class="text-white mb-4 letter-spacing-lg" style="font-size: 1.1rem;">GET IN TOUCH</h5>
+          <ul class="footer-links mb-4">
+            <li><a href="mailto:tickets@hoopcraft.com" class="footer-link-item" style="text-transform: none;">tickets@hoopcraft.com</a></li>
+            <li><a href="tel:+15552344667" class="footer-link-item">+1 (555) 234-HOOP</a></li>
+            <li><p class="mb-0" style="font-size: 0.85rem; opacity: 0.7;">550 Championship Blvd,<br>New York, NY 10001</p></li>
+          </ul>
+          <div class="social-links">
+            <a href="#" class="social-link-item" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="social-link-item" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="social-link-item" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+            <a href="#" class="social-link-item" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Footer Bottom -->
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center">
+        <p class="mb-0 text-center text-md-start">Copyright &copy; 2026 HoopCraft. All Rights Reserved.</p>
+        <p class="mb-0 mt-2 mt-md-0 text-center text-md-end" style="font-size: 0.75rem; letter-spacing: 0.15em;">THE GAME. THE ENERGY. THE PASSION.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO Metadata -->
+  <title>HoopCraft — The Game. The Energy. The Passion.</title>
+  <meta name="description"
+    content="Stay connected with the latest basketball action, game schedules, player performances, team updates, and unforgettable moments from the court.">
+
+  <!-- Open Graph Metadata -->
+  <meta property="og:title" content="HoopCraft — The Game. The Energy. The Passion.">
+  <meta property="og:description"
+    content="Stay connected with the latest basketball action, game schedules, player performances, team updates, and unforgettable moments from the court.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1546519638-68e109498ffc">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Local Styles -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <!-- Header Navigation -->
+  <header>
+    <nav class="header-nav">
+      <div class="container d-flex align-items-center justify-content-between">
+        <!-- Desktop Navigation: Left -->
+        <ul class="nav-desktop-links d-flex list-unstyled m-0 p-0">
+          <li><a href="index.html" class="nav-link-custom active">Home</a></li>
+          <li><a href="menu.html" class="nav-link-custom">Games</a></li>
+          <li><a href="about.html" class="nav-link-custom">About</a></li>
+          <li><a href="contact.html" class="nav-link-custom">Contact</a></li>
+        </ul>
+
+        <!-- Logo: Center -->
+        <div class="brand-logo-container">
+          <a href="index.html" class="brand-logo">
+            HOOPCRAFT
+            <span>BASKETBALL</span>
+          </a>
+        </div>
+
+        <!-- Desktop Navigation: Right -->
+        <div class="d-flex align-items-center">
+          <button class="theme-toggle-btn me-3" aria-label="Toggle Light and Dark Mode">
+            <i class="bi bi-moon-stars"></i>
+          </button>
+          <div class="nav-desktop-reserve">
+            <a href="reservation.html" class="btn-premium btn-premium-solid py-2 px-4" style="font-size: 0.8rem;">COURT
+              PASS</a>
+          </div>
+          <!-- Mobile Hamburger Toggle -->
+          <button class="hamburger-menu ms-2" aria-label="Open Navigation Overlay">
+            <i class="bi bi-list"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile Navigation Overlay Drawer -->
+    <div class="mobile-nav-overlay">
+      <button class="mobile-nav-close" aria-label="Close Navigation Overlay">
+        <i class="bi bi-x-lg"></i>
+      </button>
+      <ul class="mobile-nav-links">
+        <li class="mobile-nav-item"><a href="index.html" class="mobile-nav-link active">Home</a></li>
+        <li class="mobile-nav-item"><a href="menu.html" class="mobile-nav-link">Games</a></li>
+        <li class="mobile-nav-item"><a href="about.html" class="mobile-nav-link">About</a></li>
+        <li class="mobile-nav-item"><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+        <li class="mobile-nav-item mt-3"><a href="reservation.html" class="mobile-nav-btn-tab">COURT PASS</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <!-- Basketball Hero Section -->
+    <section class="hero-split" id="hero">
+      <!-- Left Image Panel -->
+      <div class="hero-left">
+        <div class="hero-img-wrapper">
+          <img src="https://images.unsplash.com/photo-1546519638-68e109498ffc"
+            alt="Basketball player rising up for a powerful slam dunk on court" class="img-fluid">
+        </div>
+      </div>
+
+      <!-- Right Content Panel -->
+      <div class="hero-right">
+        <div class="hero-content">
+          <span class="badge-fast-food mb-3">BASKETBALL • LIVE THE ENERGY</span>
+          <h1 class="hero-title mt-2">
+            <span><span>THE GAME.</span></span>
+            <span><span>THE ENERGY.</span></span>
+            <span><span>THE PASSION.</span></span>
+          </h1>
+          <p class="hero-subtitle font-body text-secondary-50 mt-3 mb-4">
+            Stay connected with the latest basketball action, game schedules, player performances, team updates, and
+            unforgettable moments from the court.
+          </p>
+          <div class="hero-actions d-flex gap-3 flex-wrap">
+            <a href="menu.html" class="btn-premium btn-premium-solid">EXPLORE GAMES</a>
+            <a href="about.html" class="btn-premium btn-premium-outline">VIEW TEAMS</a>
+          </div>
+        </div>
+
+        <div class="hero-est">EST. 2026</div>
+      </div>
+    </section>
+
+    <!-- Featured Categories Section -->
+    <section class="section-padding container">
+      <div class="text-center mb-5">
+        <span class="small-label animate-reveal">LEAGUE CATEGORIES</span>
+        <h2 class="section-title animate-reveal stagger-1">WHAT EXCITES YOUR BASKETBALL SPIRIT?</h2>
+      </div>
+
+      <div class="row g-4">
+        <!-- Category 1: FEATURED GAMES -->
+        <div class="col-lg-4 col-md-6 animate-scale">
+          <a href="menu.html" class="text-decoration-none">
+            <div class="position-relative overflow-hidden rounded-3 shadow-sm group-hover-box"
+              style="aspect-ratio: 4/3;">
+              <img src="https://images.unsplash.com/photo-1504450758481-7338eba7524a" alt="Featured Basketball Games"
+                class="w-100 h-100 object-fit-cover transition-transform">
+              <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-end p-4"
+                style="background: linear-gradient(to top, rgba(0,0,0,0.85), transparent);">
+                <div>
+                  <h3 class="text-white font-heading m-0 display-6">FEATURED GAMES</h3>
+                  <span class="text-warning font-body fw-bold" style="font-size: 0.85rem;">LIVE & UPCOMING MATCHES
+                    &rarr;</span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Category 2: TOP TEAMS -->
+        <div class="col-lg-4 col-md-6 animate-scale stagger-1">
+          <a href="menu.html" class="text-decoration-none">
+            <div class="position-relative overflow-hidden rounded-3 shadow-sm group-hover-box"
+              style="aspect-ratio: 4/3;">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbMY2Y-T-O5oPhgevG2IUS0oYviAZMBRl8has3HkT_0A&s=10"
+                alt="Top Basketball Teams" class="w-100 h-100 object-fit-cover transition-transform">
+              <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-end p-4"
+                style="background: linear-gradient(to top, rgba(0,0,0,0.85), transparent);">
+                <div>
+                  <h3 class="text-white font-heading m-0 display-6">TOP TEAMS</h3>
+                  <span class="text-warning font-body fw-bold" style="font-size: 0.85rem;">LEAGUE ROSTERS & STANDINGS
+                    &rarr;</span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Category 3: PLAYERS -->
+        <div class="col-lg-4 col-md-6 animate-scale stagger-2">
+          <a href="menu.html" class="text-decoration-none">
+            <div class="position-relative overflow-hidden rounded-3 shadow-sm group-hover-box"
+              style="aspect-ratio: 4/3;">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlxAgorOJbT14RQc42RVERwnmyQmddO76fiyfMsJ1Neg&s=10" alt="Featured Pro Players"
+                class="w-100 h-100 object-fit-cover transition-transform">
+              <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-end p-4"
+                style="background: linear-gradient(to top, rgba(0,0,0,0.85), transparent);">
+                <div>
+                  <h3 class="text-white font-heading m-0 display-6">PRO PLAYERS</h3>
+                  <span class="text-warning font-body fw-bold" style="font-size: 0.85rem;">ALL-STAR PROFILES & STATS
+                    &rarr;</span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Category 4: HIGHLIGHTS -->
+        <div class="col-lg-4 col-md-6 animate-scale stagger-3">
+          <a href="menu.html" class="text-decoration-none">
+            <div class="position-relative overflow-hidden rounded-3 shadow-sm group-hover-box"
+              style="aspect-ratio: 4/3;">
+              <img src="https://images.unsplash.com/photo-1519861531473-9200262188bf" alt="Basketball Highlights"
+                class="w-100 h-100 object-fit-cover transition-transform">
+              <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-end p-4"
+                style="background: linear-gradient(to top, rgba(0,0,0,0.85), transparent);">
+                <div>
+                  <h3 class="text-white font-heading m-0 display-6">HIGHLIGHTS</h3>
+                  <span class="text-warning font-body fw-bold" style="font-size: 0.85rem;">SLAM DUNKS & TOP PLAYS
+                    &rarr;</span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Category 5: CHAMPIONSHIPS -->
+        <div class="col-lg-4 col-md-6 animate-scale stagger-4">
+          <a href="menu.html" class="text-decoration-none">
+            <div class="position-relative overflow-hidden rounded-3 shadow-sm group-hover-box"
+              style="aspect-ratio: 4/3;">
+              <img src="https://images.stockcake.com/public/9/a/3/9a33bef5-3948-4716-8099-cdd9bf57a8fb_medium/team-huddle-strategy-stockcake.jpg" alt="Championship Tournaments"
+                class="w-100 h-100 object-fit-cover transition-transform">
+              <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-end p-4"
+                style="background: linear-gradient(to top, rgba(0,0,0,0.85), transparent);">
+                <div>
+                  <h3 class="text-white font-heading m-0 display-6">CHAMPIONSHIPS</h3>
+                  <span class="text-warning font-body fw-bold" style="font-size: 0.85rem;">PLAYOFFS & TOURNAMENTS
+                    &rarr;</span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Category 6: TRAINING & CAMPS -->
+        <div class="col-lg-4 col-md-6 animate-scale stagger-5">
+          <a href="menu.html" class="text-decoration-none">
+            <div class="position-relative overflow-hidden rounded-3 shadow-sm group-hover-box"
+              style="aspect-ratio: 4/3;">
+              <img src="https://images.unsplash.com/photo-1518063319789-7217e6706b04"
+                alt="Basketball Training and Camps" class="w-100 h-100 object-fit-cover transition-transform">
+              <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-end p-4"
+                style="background: linear-gradient(to top, rgba(0,0,0,0.85), transparent);">
+                <div>
+                  <h3 class="text-white font-heading m-0 display-6">TRAINING</h3>
+                  <span class="text-warning font-body fw-bold" style="font-size: 0.85rem;">PRO DRILLS & SKILLS CLINICS
+                    &rarr;</span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Showdowns Section -->
+    <section class="section-padding" style="background-color: var(--card-bg); overflow: hidden;">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-end mb-5">
+          <div>
+            <span class="small-label m-0">FEATURED SHOWDOWNS</span>
+            <h2 class="section-title m-0" style="font-size: clamp(2.2rem, 5vw, 4rem);">THE MATCHES EVERYONE TALKS ABOUT</h2>
+          </div>
+          <div class="d-none d-md-block text-end">
+            <a href="menu.html" class="btn-premium-text">VIEW FULL SCHEDULE <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="dishes-row">
+          <!-- Item 1 -->
+          <div class="dish-card-custom animate-scale">
+            <div class="dish-img-container">
+              <img src="https://images.unsplash.com/photo-1546519638-68e109498ffc" alt="Phoenix Titans vs LA Vipers">
+            </div>
+            <div class="dish-info">
+              <span class="dish-cat">Championship Series</span>
+              <h3 class="dish-name">PHOENIX TITANS VS LA VIPERS</h3>
+              <div class="dish-price"><i class="bi bi-calendar-event me-1"></i>OCT 15 • 7:30 PM</div>
+              <p class="dish-desc">Western conference finals rematch featuring two of the highest-scoring offenses in the league.</p>
+              <a href="reservation.html" class="btn-premium btn-premium-solid w-100 text-center" style="font-size: 0.8rem; padding: 0.9rem 1.5rem;">GET MATCH PASS</a>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="dish-card-custom animate-scale stagger-1">
+            <div class="dish-img-container">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3_By9ou61St3npqQ4GBb67KC8tn6w2lgUIsqZlxc38A&s=10" alt="Brooklyn Knights vs Chicago Force">
+            </div>
+            <div class="dish-info">
+              <span class="dish-cat">Rivalry Showdown <span class="badge-spicy">HOT RIVALRY 🔥</span></span>
+              <h3 class="dish-name">BROOKLYN KNIGHTS VS CHICAGO FORCE</h3>
+              <div class="dish-price"><i class="bi bi-calendar-event me-1"></i>OCT 18 • 8:00 PM</div>
+              <p class="dish-desc">East coast showdown with MVP contenders battling for the number one playoff seed under the bright lights.</p>
+              <a href="reservation.html" class="btn-premium btn-premium-solid w-100 text-center" style="font-size: 0.8rem; padding: 0.9rem 1.5rem;">GET MATCH PASS</a>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="dish-card-custom animate-scale stagger-2">
+            <div class="dish-img-container">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwU3_myd3LstDzjTkRjUlqILUewMb3suAF_0ABeMGQ1Q&s=10" alt="Miami Surge vs Dallas Outlaws">
+            </div>
+            <div class="dish-info">
+              <span class="dish-cat">Primetime Clash</span>
+              <h3 class="dish-name">MIAMI SURGE VS DALLAS OUTLAWS</h3>
+              <div class="dish-price"><i class="bi bi-calendar-event me-1"></i>OCT 21 • 6:00 PM</div>
+              <p class="dish-desc">High-octane perimeter shooting vs elite defensive rim protection in a fast-paced battle on center court.</p>
+              <a href="reservation.html" class="btn-premium btn-premium-solid w-100 text-center" style="font-size: 0.8rem; padding: 0.9rem 1.5rem;">GET MATCH PASS</a>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="dish-card-custom animate-scale stagger-3">
+            <div class="dish-img-container">
+              <img src="https://images.unsplash.com/photo-1504450758481-7338eba7524a" alt="Golden Coast vs Boston Iron">
+            </div>
+            <div class="dish-info">
+              <span class="dish-cat">Classic Rivalry</span>
+              <h3 class="dish-name">GOLDEN COAST VS BOSTON IRON</h3>
+              <div class="dish-price"><i class="bi bi-calendar-event me-1"></i>OCT 24 • 8:30 PM</div>
+              <p class="dish-desc">Historic rivalry renewing with fast-break tempo, clutch three-pointers, and sold-out arena energy.</p>
+              <a href="reservation.html" class="btn-premium btn-premium-solid w-100 text-center" style="font-size: 0.8rem; padding: 0.9rem 1.5rem;">GET MATCH PASS</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Parallax Full Width Section -->
+    <section class="parallax-image-section">
+      <div class="parallax-bg"
+        style="background-image: url('https://images.unsplash.com/photo-1504450758481-7338eba7524a');"></div>
+      <div class="parallax-overlay" style="background: rgba(11, 15, 25, 0.7);"></div>
+      <div class="parallax-content container text-center">
+        <span class="badge-fast-food mb-3">ARENA ENERGY • BUZZER BEATERS • DUNKS</span>
+        <h2 class="animate-reveal text-white my-3"
+          style="font-size: clamp(2.8rem, 7vw, 6rem); font-family: var(--font-heading); line-height: 1;">
+          FEEL THE ENERGY OF THE GAME.
+        </h2>
+        <p class="font-body text-white mx-auto mb-4"
+          style="max-width: 600px; font-weight: 300; font-size: 1.1rem; opacity: 0.9;">
+          Experience thunderous dunks, clutch three-pointers, and electrifying courtside atmosphere live with fellow
+          fans.
+        </p>
+        <a href="menu.html" class="btn-premium btn-premium-solid btn-warning text-dark border-warning">EXPLORE GAME
+          SCHEDULE</a>
+      </div>
+    </section>
+
+    <!-- Fan Membership & Season Pass Section -->
+    <section class="section-padding container">
+      <div class="row align-items-center gy-5">
+        <div class="col-lg-6 animate-slide-left">
+          <span class="small-label">ALL-ACCESS PASS</span>
+          <h2 class="section-title" style="font-size: clamp(2.5rem, 6vw, 5rem);">SEASON PASS &amp; VIP ACCESS</h2>
+          <p class="font-body mb-4" style="font-weight: 400; opacity: 0.9;">
+            Elevate your basketball experience with courtside priority access, live streaming replays, exclusive locker
+            room content, and official team gear discounts.
+          </p>
+
+          <div class="combo-card mb-4">
+            <span class="badge-tag mb-2">MOST POPULAR MEMBERSHIP</span>
+            <h3 class="font-heading display-5 text-warning my-2">THE ALL-STAR VIP PASS</h3>
+            <p class="mb-3 font-body opacity-90">Full Season Arena Access + Live HD Stream Pass + Official League Jersey
+              + VIP Meet &amp; Greet</p>
+            <div class="d-flex align-items-center justify-content-between">
+              <span class="font-heading display-6 text-white">$199 / YR</span>
+              <a href="reservation.html" class="btn-premium btn-premium-solid py-2 px-4" style="font-size: 0.8rem;">GET
+                PASS</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 animate-slide-right stagger-1">
+          <div class="rounded-3 overflow-hidden shadow-lg" style="aspect-ratio: 4/3;">
+            <img src="https://images.unsplash.com/photo-1519861531473-9200262188bf"
+              alt="Basketball Fan Experience and Courtside Action" class="w-100 h-100 object-fit-cover">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section-padding text-center" style="background-color: var(--color-charcoal); color: #fff;">
+      <div class="container py-4">
+        <span class="badge-fast-food mb-3">FOLLOW EVERY MOMENT ON THE COURT</span>
+        <h2 class="section-title text-white animate-reveal" style="font-size: clamp(3rem, 8vw, 7rem);">FEEL THE ENERGY
+        </h2>
+        <p class="font-body text-white-50 mx-auto mb-5 animate-reveal stagger-1"
+          style="max-width: 500px; font-weight: 300; font-size: 1.15rem;">
+          Never miss a buzzer beater, tournament bracket update, or highlight reel. Join millions of passionate
+          basketball fans today.
+        </p>
+        <div class="animate-reveal stagger-2">
+          <a href="reservation.html" class="btn-premium btn-premium-solid bg-danger text-white border-danger py-3 px-5"
+            style="font-size: 1rem;">GET YOUR PASS NOW <i class="bi bi-arrow-right ms-2"></i></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="footer-section">
+    <div class="container">
+      <div class="row gy-5">
+        <!-- Brand Info -->
+        <div class="col-lg-4 col-md-12">
+          <a href="index.html" class="footer-logo">
+            HOOPCRAFT
+            <span class="text-warning">BASKETBALL</span>
+          </a>
+          <p class="font-body mt-4" style="opacity: 0.7; max-width: 320px; font-size: 0.9rem;">
+            Stay connected with the latest basketball action, game schedules, player performances, team updates, and
+            unforgettable moments from the court.
+          </p>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="col-lg-2 col-md-4 col-6">
+          <h5 class="text-white mb-4 letter-spacing-lg" style="font-size: 1.1rem;">EXPLORE</h5>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link-item">Home</a></li>
+            <li><a href="menu.html" class="footer-link-item">Games</a></li>
+            <li><a href="about.html" class="footer-link-item">About Us</a></li>
+            <li><a href="contact.html" class="footer-link-item">Contact</a></li>
+            <li><a href="reservation.html" class="footer-link-item">Court Pass</a></li>
+          </ul>
+        </div>
+
+        <!-- Categories -->
+        <div class="col-lg-3 col-md-4 col-6">
+          <h5 class="text-white mb-4 letter-spacing-lg" style="font-size: 1.1rem;">LEAGUES &amp; MORE</h5>
+          <ul class="footer-links">
+            <li><a href="menu.html" class="footer-link-item">Featured Games</a></li>
+            <li><a href="menu.html" class="footer-link-item">Top Teams</a></li>
+            <li><a href="menu.html" class="footer-link-item">Player Profiles</a></li>
+            <li><a href="menu.html" class="footer-link-item">Tournaments</a></li>
+            <li><a href="menu.html" class="footer-link-item">Training Camps</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Details -->
+        <div class="col-lg-3 col-md-4 col-12">
+          <h5 class="text-white mb-4 letter-spacing-lg" style="font-size: 1.1rem;">GET IN TOUCH</h5>
+          <ul class="footer-links mb-4">
+            <li><a href="mailto:tickets@hoopcraft.com" class="footer-link-item"
+                style="text-transform: none;">tickets@hoopcraft.com</a></li>
+            <li><a href="tel:+15552344667" class="footer-link-item">+1 (555) 234-HOOP</a></li>
+            <li>
+              <p class="mb-0" style="font-size: 0.85rem; opacity: 0.7;">550 Championship Blvd,<br>New York, NY 10001</p>
+            </li>
+          </ul>
+          <div class="social-links">
+            <a href="#" class="social-link-item" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="social-link-item" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="social-link-item" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+            <a href="#" class="social-link-item" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center">
+        <p class="mb-0 text-center text-md-start">Copyright &copy; 2026 HoopCraft. All Rights Reserved.</p>
+        <p class="mb-0 mt-2 mt-md-0 text-center text-md-end" style="font-size: 0.75rem; letter-spacing: 0.15em;">THE
+          GAME. THE ENERGY. THE PASSION.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
