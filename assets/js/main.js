@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initCountdown();
   initForms();
   initMenuFilters();
+  initScrollNavButton();
 });
 
 /* ==========================================================================
@@ -384,3 +385,51 @@ function initForms() {
     });
   }
 }
+
+/* ==========================================================================
+   10. TOP TO BOTTOM / PAGE SCROLL NAVIGATION BUTTON
+   ========================================================================== */
+function initScrollNavButton() {
+  if (document.getElementById('scroll-top-bottom-btn')) return;
+
+  const btn = document.createElement('button');
+  btn.id = 'scroll-top-bottom-btn';
+  btn.className = 'scroll-top-bottom-btn';
+  btn.setAttribute('aria-label', 'Scroll from top to bottom');
+  btn.setAttribute('title', 'Scroll to Bottom');
+  btn.innerHTML = '<i class="bi bi-arrow-down"></i>';
+  document.body.appendChild(btn);
+
+  const updateButtonState = () => {
+    const scrollTotal = document.documentElement.scrollHeight - window.innerHeight;
+    const currentScroll = window.scrollY;
+
+    // When scrolled past 50% of the page or near bottom, change icon to scroll back up
+    if (scrollTotal > 150 && currentScroll > scrollTotal * 0.55) {
+      btn.innerHTML = '<i class="bi bi-arrow-up"></i>';
+      btn.setAttribute('aria-label', 'Scroll to top');
+      btn.setAttribute('title', 'Scroll to Top');
+      btn.classList.add('pointing-up');
+    } else {
+      btn.innerHTML = '<i class="bi bi-arrow-down"></i>';
+      btn.setAttribute('aria-label', 'Scroll to bottom');
+      btn.setAttribute('title', 'Scroll to Bottom');
+      btn.classList.remove('pointing-up');
+    }
+  };
+
+  btn.addEventListener('click', () => {
+    const scrollTotal = document.documentElement.scrollHeight - window.innerHeight;
+    const currentScroll = window.scrollY;
+
+    if (scrollTotal > 150 && currentScroll > scrollTotal * 0.55) {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+      window.scrollTo({ top: document.documentElement.scrollHeight, behavior: 'smooth' });
+    }
+  });
+
+  window.addEventListener('scroll', updateButtonState);
+  updateButtonState();
+}
+
